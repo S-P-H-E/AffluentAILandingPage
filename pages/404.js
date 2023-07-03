@@ -57,7 +57,7 @@ export default function Fourofour(){
 
             <div className="flex flex-col justify-center items-center">
                 <div className="mask">
-                    <animated.h1 style={h1Animation} className="text-[30rem]">404</animated.h1>
+                    <animated.h1 style={h1Animation} className="text-[25rem]">404</animated.h1>
                 </div>
                 <div className="mask p-1">
                     <animated.p style={pAnimation} className="text-4xl font-medium flex flex-col justify-center items-center">Got lost looking for something? Chat to our AI <span><Image width={50} src={Logo2}/></span></animated.p>

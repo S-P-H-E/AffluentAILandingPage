@@ -101,11 +101,11 @@ export default function Home() {
         <Chat />
 
         {/* Hero */}
-        <div className="flex flex-col justify-center items-center my-10 md:my-52">
+        <div className="flex flex-col justify-center items-center my-10 md:my-48">
           <div className="mask">
-            <animated.div style={nameAnimation} className="border border-[#2C2F27] rounded-full px-4 py-1 flex justify-center items-center gap-1">
-              <Image src={Logo} alt="logo" width={20} className="cursor-pointer"/>
-              <h1 className="font-bold text-xl uppercase ">Affluent AI</h1>
+            <animated.div style={nameAnimation} className="border border-[#2C2F27] rounded-full px-4 py-1 flex justify-center items-center gap-1 mb-2">
+              <Image src={Logo} alt="logo" className="w-[13px] md:w-[20px]"/>
+              <h1 className="font-bold text-[13px] md:text-xl uppercase">Affluent AI</h1>
             </animated.div>
           </div>
           <div className="mask">
