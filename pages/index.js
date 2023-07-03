@@ -36,22 +36,28 @@ export default function Home() {
   });
 
   // Hero
-  const h11Animation = useSpring({
+  const nameAnimation = useSpring({
     from: { opacity: 0, transform: 'translateY(130px)'},
     to: { opacity: 1, transform: 'translateY(0)'},
     delay: 600,
   });
 
-  const h12Animation = useSpring({
+  const h11Animation = useSpring({
     from: { opacity: 0, transform: 'translateY(130px)'},
     to: { opacity: 1, transform: 'translateY(0)'},
     delay: 800,
   });
 
-  const buttonAnimation = useSpring({
+  const h12Animation = useSpring({
     from: { opacity: 0, transform: 'translateY(130px)'},
     to: { opacity: 1, transform: 'translateY(0)'},
     delay: 1100,
+  });
+
+  const buttonAnimation = useSpring({
+    from: { opacity: 0, transform: 'translateY(130px)'},
+    to: { opacity: 1, transform: 'translateY(0)'},
+    delay: 1300,
   });
 
   return (
@@ -63,12 +69,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="relative flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
 
         {/* Navbar */}
         <div className="w-full md:w-[1000px] p-7 flex justify-between items-center">
           <div className="mask">  
-            <animated.div style={logoAnimation}>
+            <animated.div style={logoAnimation} className="flex justify-center items-center">
               <Image src={Logo} alt="logo" width={30} className="cursor-pointer"/>
             </animated.div>
           </div>
@@ -96,6 +102,12 @@ export default function Home() {
 
         {/* Hero */}
         <div className="flex flex-col justify-center items-center my-10 md:my-52">
+          <div className="mask">
+            <animated.div style={nameAnimation} className="border border-[#2C2F27] rounded-full px-4 py-1 flex justify-center items-center gap-1">
+              <Image src={Logo} alt="logo" width={20} className="cursor-pointer"/>
+              <h1 className="font-bold text-xl uppercase ">Affluent AI</h1>
+            </animated.div>
+          </div>
           <div className="mask">
             <animated.h1 style={h11Animation} className="text-center uppercase font-bold text-5xl md:text-9xl">Unleash the</animated.h1>
           </div>
