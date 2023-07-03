@@ -6,7 +6,7 @@ import Logo from "@/public/images/logo.svg"
 import Logo2 from "@/public/images/logo.png"
 import Head from "next/head";
 
-export default function fourofour(){
+export default function Fourofour(){
      // Animation
     const logoAnimation = useSpring({
         from: { opacity: 0, transform: 'translateY(130px)'},
