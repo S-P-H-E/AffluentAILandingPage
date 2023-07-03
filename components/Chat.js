@@ -2,8 +2,7 @@ import { useSpring, animated } from 'react-spring';
 import { PiArrowBendLeftDownBold, PiChatFill } from "react-icons/pi"
 import Logo from "@/public/images/logo.svg"
 import Image from 'next/image';
-
-/* eslint-disable-next-line @next/next/no-sync-scripts */
+import Script from 'next/script'
 
 export default function Chat(){
     const tryitAnimation = useSpring({
@@ -14,25 +13,23 @@ export default function Chat(){
 
     return(
         <>
-        <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-        <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.botpressWebChat.init({
-            "composerPlaceholder": "Chat with Affluent AI",
-            "botConversationDescription": "I'll answer any questions you have about Affluent AI",
-            "botId": "77c19103-88e3-46cf-b99b-c7e6754c3803",
-            "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
-            "messagingUrl": "https://messaging.botpress.cloud",
-            "clientId": "77c19103-88e3-46cf-b99b-c7e6754c3803",
-            "botName": "Affluent AI",
-            "avatarUrl": "https://affluent-ai.vercel.app/_next/static/media/logo.2d11b754.svg",
-            "useSessionStorage": true,
-            "showBotInfoPage": true
-          });
-        `,
-        }}
-      /> 
+        <Script src="https://cdn.botpress.cloud/webchat/v0/inject.js" />
+      <Script>
+        {`
+        window.botpressWebChat.init({
+          "composerPlaceholder": "Chat with Affluent AI",
+          "botConversationDescription": "I'll answer any questions you have about Affluent AI",
+          "botId": "77c19103-88e3-46cf-b99b-c7e6754c3803",
+          "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+          "messagingUrl": "https://messaging.botpress.cloud",
+          "clientId": "77c19103-88e3-46cf-b99b-c7e6754c3803",
+          "botName": "Affluent AI",
+          "avatarUrl": "https://affluent-ai.vercel.app/_next/static/media/logo.2d11b754.svg",
+          "useSessionStorage": true,
+          "showBotInfoPage": true
+        });
+        `}
+      </Script>
         </>
     )
 }
