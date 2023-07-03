@@ -3,6 +3,8 @@ import { PiArrowBendLeftDownBold, PiChatFill } from "react-icons/pi"
 import Logo from "@/public/images/logo.svg"
 import Image from 'next/image';
 
+/* eslint-disable-next-line @next/next/no-sync-scripts */
+
 export default function Chat(){
     const tryitAnimation = useSpring({
         from: { opacity: 0, transform: 'scale(0)'},
@@ -30,9 +32,12 @@ export default function Chat(){
           });
         `,
         }}
-      />
+      /> 
+        </>
+    )
+}
 
-            {/* <div className="fixed bottom-0 right-0 m-10 md:m-[100px] flex flex-col justify-center items-end z-10 bg-blue-500">
+{/* <div className="fixed bottom-0 right-0 m-10 md:m-[100px] flex flex-col justify-center items-end z-10 bg-blue-500">
                 <animated.div style={tryitAnimation} className="invisible md:visible bg-red-500 w-[300px] flex flex-col justify-center items-center">
                     <h1 className="text-3xl font-medium mb-4">Try it out</h1>
                     <PiArrowBendLeftDownBold className=" scale-[200%] -rotate-45"/>
@@ -42,7 +47,3 @@ export default function Chat(){
                     <Image src={Logo} className="w-[45px]"/>
                 </div>
             </div> */}
-        </>
-    )
-}
-
