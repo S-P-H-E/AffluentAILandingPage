@@ -79,7 +79,7 @@ export default function Plan(){
                                 <h1 className="text-[#A0D03A] bg-[#2E3C11] px-3 py-1 w-fit rounded-full font-medium text-xl">Premium</h1>
                             </div>
                             <div className="my-5 flex justify-start items-end gap-1">
-                                <h1 className="text-[#E0E5D2] text-5xl font-bold">$799</h1>
+                                <h1 className="text-[#E0E5D2] text-5xl font-bold">$950</h1>
                                 <h2 className="text-[#6C6E68] font-medium">/One payment</h2>
                             </div>
                             <div className="flex flex-col gap-4">
@@ -109,7 +109,7 @@ export default function Plan(){
                                 <h1 className="text-[#9EA098] font-medium text-xl">Support</h1>
                             </div>
                             <div className="my-5 flex justify-start items-end gap-1">
-                                <h1 className="text-[#30332C] text-5xl font-bold">$200</h1>
+                                <h1 className="text-[#30332C] text-5xl font-bold">$500</h1>
                                 <h2 className="text-[#6C6E68] font-medium">/month</h2>
                             </div>
                             <div className="flex flex-col gap-4">
