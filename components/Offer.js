@@ -70,7 +70,7 @@ export default function Offer(){
                     </animated.div>
                 </div>
                 <div className="mb-10 flex gap-3">
-                    <animated.div ref={ref3} style={Card3Animation} className="text-2xl bg-white border border-[#D9DCD6] rounded-3xl p-10 font-semibold flex flex-col gap-10 h-[500px] w-full">
+                    <animated.div ref={ref3} style={Card3Animation} className="text-2xl bg-white border border-[#D9DCD6] rounded-3xl p-10 font-semibold flex flex-col gap-10 h-fit md:h-[500px] w-full">
                         <h1 className="text-[#A5A79F]">Lead Capture & Automation</h1>
                         <p>With this advanced feature, our chatbot can seamlessly gather valuable leads from your website while providing personalized information that is instantly sent to a spreadsheet. This includes essential details such as their email address, name, specific needs, and how your business can address those needs. By streamlining the lead collection process, our chatbot empowers you to effortlessly gather crucial information and gain context before reaching out to potential customers.</p>
                     </animated.div>
