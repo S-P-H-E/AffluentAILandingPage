@@ -62,7 +62,7 @@ export default function Offer(){
                 <div className="mt-10 mb-3 flex flex-col md:flex-row gap-3">
                     <animated.div ref={ref1} style={Card1Animation} className="text-2xl bg-white border border-[#D9DCD6] rounded-3xl p-10 font-semibold flex flex-col gap-10 h-[500px] w-full">
                         <h1 className="text-[#A5A79F]">Hassle-free</h1>
-                        <p>We specialize in automating business support systems by offering a custom AI Chatbot as an assitant. We&apos;ll take the pressure off you and let the AI handle the rest.</p>
+                        <p>We specialize in automating business support systems by offering a custom AI Chatbot as an assistant. We&apos;ll take the pressure off you and let the AI handle the rest.</p>
                     </animated.div>
                     <animated.div ref={ref2} style={Card2Animation} className="text-2xl bg-white border border-[#D9DCD6] rounded-3xl p-10 font-medium flex flex-col gap-10 h-[500px] w-full">
                         <h1 className="text-[#A5A79F]">ChatGPT Intergration</h1>
