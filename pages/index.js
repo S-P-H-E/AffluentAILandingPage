@@ -9,6 +9,7 @@ import Chat from "@/components/Chat";
 import Plan from "@/components/Plan";
 import Contact from "@/components/Contact";
 import { useRef, useEffect } from "react";
+import Script from 'next/script'
 
 export default function Home() {
 
@@ -69,6 +70,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></Script>
+      <Script src="https://mediafiles.botpress.cloud/77c19103-88e3-46cf-b99b-c7e6754c3803/webchat/config.js" defer></Script>
+
       <div className="flex flex-col justify-center items-center">
 
         {/* Navbar */}
@@ -97,11 +101,8 @@ export default function Home() {
           </div> */}
         </div>
 
-        {/* Chat */}
-        <Chat />
-
         {/* Hero */}
-        <div className="flex flex-col justify-center items-center my-10 md:my-48">
+        <div className="flex flex-col justify-center items-center my-10 h-fit md:m-0 md:h-screen">
           <div className="mask">
             <animated.div style={nameAnimation} className="border border-[#2C2F27] rounded-full px-4 py-1 flex justify-center items-center gap-1 mb-2">
               <Image src={Logo} alt="logo" className="w-[13px] md:w-[20px]"/>
@@ -109,10 +110,10 @@ export default function Home() {
             </animated.div>
           </div>
           <div className="mask">
-            <animated.h1 style={h11Animation} className="text-center uppercase font-bold text-5xl md:text-9xl">Unleash the</animated.h1>
+            <animated.h1 style={h11Animation} className="text-center uppercase font-bold text-5xl md:text-[150px]">Unleash the</animated.h1>
           </div>
           <div className="mask">
-            <animated.h1 style={h12Animation} className="text-center uppercase font-bold text-5xl md:text-9xl">power of AI</animated.h1>
+            <animated.h1 style={h12Animation} className="text-center uppercase font-bold text-5xl md:text-[150px]">power of AI</animated.h1>
           </div>
           <div className="mask">
             <animated.button style={buttonAnimation} onClick={scrollToOffer} className="group bg-[var(--button)] px-6 md:px-8 py-2 md:py-6 rounded-xl font-medium text-xl md:text-3xl m-10 flex justify-center items-center gap-2">

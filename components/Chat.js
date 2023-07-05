@@ -13,8 +13,8 @@ export default function Chat(){
 
     return(
         <>
-        <Script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></Script>
-        <Script src="https://mediafiles.botpress.cloud/77c19103-88e3-46cf-b99b-c7e6754c3803/webchat/config.js" defer></Script>
+            <Script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></Script>
+            <Script src="https://mediafiles.botpress.cloud/77c19103-88e3-46cf-b99b-c7e6754c3803/webchat/config.js" defer></Script>
         </>
     )
 }
