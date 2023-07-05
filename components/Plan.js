@@ -1,4 +1,4 @@
-import { BsCheckCircle } from "react-icons/bs"
+import { BsCheckCircle, BsArrowRightShort } from "react-icons/bs"
 import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 
@@ -46,12 +46,20 @@ export default function Plan(){
         // Adjust the perspective value (1000px) and the rotation angle (0deg and -90deg) as per your requirement
     });
 
+    const handlePremium = () => {
+        window.open("https://buy.stripe.com/3cs6rl5aPazg8BW9AA")
+    }
+
+    const handleSupport = () => {
+        window.open("https://buy.stripe.com/00gbLFdHl6j005qdQR")
+    }
+
     return(
         <>
             <animated.div ref={ref} style={PlanAnimation} className="w-full md:w-[1000px] flex flex-col justify-center items-center">
                 <h1 className="text-2xl md:text-5xl font-bold uppercase">Choose Your Plan</h1>
                 <div className="m-12 flex flex-col md:flex-row gap-2">
-                    <animated.div ref={ref1} style={Card1Animation}>
+                    {/* <animated.div ref={ref1} style={Card1Animation}>
                         <div className="bg-[#181916] border border-[#D9DCD6] w-[350px] rounded-2xl p-10">
                             <div>
                                 <h1 className="text-[#9EA098] font-medium text-xl">Standard</h1>
@@ -72,7 +80,7 @@ export default function Plan(){
                             </div>
                             <button className="bg-[#565E45] text-[#DCE0CD]  px-4 py-2 rounded-xl font-medium mt-7">Get Started</button>
                         </div>
-                    </animated.div>
+                    </animated.div> */}
                     <animated.div ref={ref2} style={Card2Animation}>
                         <div className="bg-[#181916] border border-[#D9DCD6] w-[350px] rounded-2xl p-10">
                             <div>
@@ -100,7 +108,10 @@ export default function Plan(){
                                     <h1 className="text-[#9EA098]">Automatic Outreach to Leads</h1>
                                 </div>
                             </div>
-                            <button className="bg-[var(--button)] px-4 py-2 rounded-xl font-medium mt-7">Get Started</button>
+                            <button className="bg-[var(--button)] px-4 py-2 rounded-xl font-medium mt-7 group flex justify-center items-center" onClick={handlePremium}>
+                                <h1>Get Started</h1>
+                                <BsArrowRightShort size={30} className="transition-transform duration-300 -rotate-45 group-hover:rotate-0"/>
+                            </button>
                         </div>
                     </animated.div>
                     <animated.div ref={ref3} style={Card3Animation}>
@@ -122,7 +133,10 @@ export default function Plan(){
                                     <h1>New Chatbot Features</h1>
                                 </div>
                             </div>
-                            <button className="bg-[#565E45] text-[#DCE0CD]  px-4 py-2 rounded-xl font-medium mt-7">Get Started</button>
+                            <button className="bg-[#565E45] text-[#DCE0CD]  px-4 py-2 rounded-xl font-medium mt-7 group flex justify-center items-center" onClick={handleSupport}>
+                                Get Started
+                                <BsArrowRightShort size={30} className="transition-transform duration-300 -rotate-45 group-hover:rotate-0"/>
+                            </button>
                         </div>
                     </animated.div>
                 </div>
