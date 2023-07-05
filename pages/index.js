@@ -110,10 +110,10 @@ export default function Home() {
             </animated.div>
           </div>
           <div className="mask">
-            <animated.h1 style={h11Animation} className="text-center uppercase font-bold text-5xl md:text-[150px]">Unleash the</animated.h1>
+            <animated.h1 style={h11Animation} className="text-center uppercase font-bold text-5xl md:text-9xl">Unleash the</animated.h1>
           </div>
           <div className="mask">
-            <animated.h1 style={h12Animation} className="text-center uppercase font-bold text-5xl md:text-[150px]">power of AI</animated.h1>
+            <animated.h1 style={h12Animation} className="text-center uppercase font-bold text-5xl md:text-9xl">power of AI</animated.h1>
           </div>
           <div className="mask">
             <animated.button style={buttonAnimation} onClick={scrollToOffer} className="group bg-[var(--button)] px-6 md:px-8 py-2 md:py-6 rounded-xl font-medium text-xl md:text-3xl m-10 flex justify-center items-center gap-2">
