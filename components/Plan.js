@@ -54,23 +54,23 @@ export default function Plan(){
                     <animated.div ref={ref1} style={Card1Animation}>
                         <div className="bg-[#181916] border border-[#D9DCD6] w-[350px] rounded-2xl p-10">
                             <div>
-                                <h1 className="text-[#9EA098] font-medium text-xl">Basic</h1>
+                                <h1 className="text-[#9EA098] font-medium text-xl">Standard</h1>
                             </div>
                             <div className="my-5 flex justify-start items-end gap-1">
-                                <h1 className="text-[#E0E5D2] text-5xl font-bold">$50</h1>
-                                <h2 className="text-[#6C6E68] font-medium">/month</h2>
+                                <h1 className="text-[#E0E5D2] text-5xl font-bold">$300</h1>
+                                <h2 className="text-[#6C6E68] font-medium">/One payment</h2>
                             </div>
-                            <div>
+                            <div className="flex flex-col gap-4">
                                 <div className="flex justify-start items-center gap-2">
                                     <BsCheckCircle className="text-[#E0E5D2]"/>
-                                    <h1 className="text-[#9EA098]">AI-powered chatbot</h1>
+                                    <h1 className="text-[#9EA098]">Customer Support Chatbot</h1>
                                 </div>
-                                <div className="flex justify-start items-center gap-2 my-4">
+                                <div className="flex justify-start items-center gap-2">
                                     <BsCheckCircle className="text-[#E0E5D2]"/>
-                                    <h1 className="text-[#9EA098]">500 interactions per month</h1>
+                                    <h1 className="text-[#9EA098]">Lead Capture</h1>
                                 </div>
                             </div>
-                            <button className="bg-[#565E45] text-[#DCE0CD] px-4 py-2 rounded-xl font-medium mt-7">Get Started</button>
+                            <button className="bg-[#565E45] text-[#DCE0CD]  px-4 py-2 rounded-xl font-medium mt-7">Get Started</button>
                         </div>
                     </animated.div>
                     <animated.div ref={ref2} style={Card2Animation}>
@@ -79,43 +79,47 @@ export default function Plan(){
                                 <h1 className="text-[#A0D03A] bg-[#2E3C11] px-3 py-1 w-fit rounded-full font-medium text-xl">Premium</h1>
                             </div>
                             <div className="my-5 flex justify-start items-end gap-1">
-                                <h1 className="text-[#E0E5D2] text-5xl font-bold">$899</h1>
-                                <h2 className="text-[#6C6E68] font-medium">/month</h2>
+                                <h1 className="text-[#E0E5D2] text-5xl font-bold">$799</h1>
+                                <h2 className="text-[#6C6E68] font-medium">/One payment</h2>
                             </div>
-                            <div>
+                            <div className="flex flex-col gap-4">
                                 <div className="flex justify-start items-center gap-2">
                                     <BsCheckCircle className="text-[#E0E5D2]"/>
-                                    <h1 className="text-[#9EA098]">AI-powered chatbot</h1>
-                                </div>
-                                <div className="flex justify-start items-center gap-2 my-4">
-                                    <BsCheckCircle className="text-[#E0E5D2]"/>
-                                    <h1 className="text-[#9EA098]">20,000 interactions per month</h1>
+                                    <h1 className="text-[#9EA098]">AI Customer Support Chatbot</h1>
                                 </div>
                                 <div className="flex justify-start items-center gap-2">
                                     <BsCheckCircle className="text-[#E0E5D2]"/>
-                                    <h1 className="text-[#9EA098]">24/7 Support</h1>
+                                    <h1 className="text-[#9EA098]">GPT Integration</h1>
+                                </div>
+                                <div className="flex justify-start items-center gap-2">
+                                    <BsCheckCircle className="text-[#E0E5D2]"/>
+                                    <h1 className="text-[#9EA098]">Lead Capture</h1>
+                                </div>
+                                <div className="flex justify-start items-center gap-2">
+                                    <BsCheckCircle className="text-[#E0E5D2]"/>
+                                    <h1 className="text-[#9EA098]">Automatic Outreach to Leads</h1>
                                 </div>
                             </div>
                             <button className="bg-[var(--button)] px-4 py-2 rounded-xl font-medium mt-7">Get Started</button>
                         </div>
                     </animated.div>
                     <animated.div ref={ref3} style={Card3Animation}>
-                        <div className="bg-[#181916] border border-[#D9DCD6] w-[350px] rounded-2xl p-10">
+                        <div className="bg-white border border-[#181916] w-[350px] rounded-2xl p-10">
                             <div>
-                                <h1 className="text-[#9EA098] font-medium text-xl">Standard</h1>
+                                <h1 className="text-[#9EA098] font-medium text-xl">Support</h1>
                             </div>
                             <div className="my-5 flex justify-start items-end gap-1">
-                                <h1 className="text-[#E0E5D2] text-5xl font-bold">$399</h1>
+                                <h1 className="text-[#30332C] text-5xl font-bold">$200</h1>
                                 <h2 className="text-[#6C6E68] font-medium">/month</h2>
                             </div>
-                            <div>
+                            <div className="flex flex-col gap-4">
                                 <div className="flex justify-start items-center gap-2">
-                                    <BsCheckCircle className="text-[#E0E5D2]"/>
-                                    <h1 className="text-[#9EA098]">AI-powered chatbot</h1>
+                                    <BsCheckCircle />
+                                    <h1>Maintenance Updates to Chatbot</h1>
                                 </div>
-                                <div className="flex justify-start items-center gap-2 my-4">
-                                    <BsCheckCircle className="text-[#E0E5D2]"/>
-                                    <h1 className="text-[#9EA098]">1,000 interactions per month</h1>
+                                <div className="flex justify-start items-center gap-2">
+                                    <BsCheckCircle/>
+                                    <h1>New Chatbot Features</h1>
                                 </div>
                             </div>
                             <button className="bg-[#565E45] text-[#DCE0CD]  px-4 py-2 rounded-xl font-medium mt-7">Get Started</button>

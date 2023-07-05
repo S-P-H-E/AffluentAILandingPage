@@ -11,16 +11,16 @@ export default function Contact() {
     transform: inView ? 'scale(1)' : 'scale(0)',
   });
 
-  const handleEmailClick = () => {
-    window.location.href = 'mailto:sphe.g.personal@gmail.com';
+  const handleBookCall = () => {
+    window.open('https://calendly.com/contactaffluentai/discovery?back=1&month=2023-07', '_blank');
   };
 
   return (
     <>
       <animated.div ref={ref} style={ContactAnimation} className="md:m-24 flex flex-col justify-center items-center">
         <h1 className="text-2xl md:text-5xl font-bold uppercase">Get In Contact</h1>
-        <button className="bg-[var(--button)] px-6 py-3 rounded-xl font-medium m-2 md:mt-7" onClick={handleEmailClick}>
-          Email Us
+        <button className="bg-[var(--button)] px-6 py-3 rounded-xl font-medium m-2 md:mt-7" onClick={handleBookCall}>
+          Book a call
         </button>
       </animated.div>
     </>

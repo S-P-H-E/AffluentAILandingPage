@@ -65,14 +65,14 @@ export default function Offer(){
                         <p>We specialize in automating business support systems by offering a custom AI Chatbot as an assitant. We&apos;ll take the pressure off you and let the AI handle the rest.</p>
                     </animated.div>
                     <animated.div ref={ref2} style={Card2Animation} className="text-2xl bg-white border border-[#D9DCD6] rounded-3xl p-10 font-medium flex flex-col gap-10 h-[500px] w-full">
-                        <h1 className="text-[#A5A79F]">Cost Effective</h1>
-                        <p>By implementing automation, you can minimize expenses and increase your bottom line through a reduction in manual labor requirements.</p>
+                        <h1 className="text-[#A5A79F]">ChatGPT Intergration</h1>
+                        <p>Depending on the plan you pick, our chatbot will have GPT intergration and have a databse of information about your business fed to it, enabling it to answer any question imaginable about your business.</p>
                     </animated.div>
                 </div>
                 <div className="mb-10 flex gap-3">
                     <animated.div ref={ref3} style={Card3Animation} className="text-2xl bg-white border border-[#D9DCD6] rounded-3xl p-10 font-semibold flex flex-col gap-10 h-[500px] w-full">
-                        <h1 className="text-[#A5A79F]">Scalability</h1>
-                        <p>We have developed scalable solutions that seamlessly adapt to your business, allowing for future growth and expansion.</p>
+                        <h1 className="text-[#A5A79F]">Lead Capture & Automation</h1>
+                        <p>With this advanced feature, our chatbot can seamlessly gather valuable leads from your website while providing personalized information that is instantly sent to a spreadsheet. This includes essential details such as their email address, name, specific needs, and how your business can address those needs. By streamlining the lead collection process, our chatbot empowers you to effortlessly gather crucial information and gain context before reaching out to potential customers.</p>
                     </animated.div>
                 </div>
             </animated.div>
