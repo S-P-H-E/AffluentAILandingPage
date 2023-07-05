@@ -106,17 +106,17 @@ export default function Home() {
           <div className="mask">
             <animated.div style={nameAnimation} className="border border-[#2C2F27] rounded-full px-4 py-1 flex justify-center items-center gap-1 mb-2">
               <Image src={Logo} alt="logo" className="w-[13px] md:w-[20px]"/>
-              <h1 className="font-bold text-[13px] md:text-[1.5vh] uppercase">Affluent AI</h1>
+              <h1 className="font-bold text-[13px] md:text-xl uppercase">Affluent AI</h1>
             </animated.div>
           </div>
           <div className="mask">
-            <animated.h1 style={h11Animation} className="text-center uppercase font-bold text-5xl md:text-[11vh]">Unleash the</animated.h1>
+            <animated.h1 style={h11Animation} className="text-center uppercase font-bold text-5xl md:text-[8vw]">Unleash the</animated.h1>
           </div>
           <div className="mask">
-            <animated.h1 style={h12Animation} className="text-center uppercase font-bold text-5xl md:text-[11vh]">power of AI</animated.h1>
+            <animated.h1 style={h12Animation} className="text-center uppercase font-bold text-5xl md:text-[8vw]">power of AI</animated.h1>
           </div>
           <div className="mask">
-            <animated.button style={buttonAnimation} onClick={scrollToOffer} className="group bg-[var(--button)] px-6 md:px-8 py-2 md:py-6 rounded-xl font-medium text-xl md:text-[2.3vh] m-10 flex justify-center items-center gap-2">
+            <animated.button style={buttonAnimation} onClick={scrollToOffer} className="group bg-[var(--button)] px-6 md:px-8 py-2 md:py-6 rounded-xl font-medium text-xl md:text-3xl m-10 flex justify-center items-center gap-2">
               Learn More
               <BsArrowRightShort size={40} className="transition-transform duration-300 group-hover:rotate-45"/>
             </animated.button>
