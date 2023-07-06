@@ -58,15 +58,15 @@ export default function Offer(){
     return(
         <>
             <animated.div ref={ref} style={AboutUsAnimation} className="w-full p-5 md:p-0 md:w-[1000px] flex flex-col justify-center items-center md:m-24">
-                <h1 className="text-2xl md:text-5xl font-bold uppercase">What we offer</h1>
+                <h1 className="text-2xl md:text-5xl font-bold uppercase">About Us</h1>
                 <div className="mt-10 mb-3 flex flex-col md:flex-row gap-3">
                     <animated.div ref={ref1} style={Card1Animation} className="text-2xl bg-white border border-[#D9DCD6] rounded-3xl p-10 font-semibold flex flex-col gap-10 h-[500px] w-full">
                         <h1 className="text-[#A5A79F]">Hassle-free</h1>
-                        <p>We specialize in automating business support systems by offering a custom AI Chatbot as an assistant. We&apos;ll take the pressure off you and let the AI handle the rest.</p>
+                        <p>We specialize in automating sales coache&apos;s customer support systems by offering a custom AI solutions. We&apos;ll take the pressure off you and let the AI handle the rest.</p>
                     </animated.div>
                     <animated.div ref={ref2} style={Card2Animation} className="text-2xl bg-white border border-[#D9DCD6] rounded-3xl p-10 font-medium flex flex-col gap-10 h-[500px] w-full">
                         <h1 className="text-[#A5A79F]">ChatGPT Intergration</h1>
-                        <p>Depending on the plan you pick, our chatbot will have GPT intergration and have a databse of information about your business fed to it, enabling it to answer any question imaginable about your business.</p>
+                        <p>Chatbot will have GPT intergration and have a databse of information about your business fed to it, enabling it to answer any question imaginable about your business.</p>
                     </animated.div>
                 </div>
                 <div className="mb-10 flex gap-3">

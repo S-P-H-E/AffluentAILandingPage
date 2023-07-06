@@ -118,7 +118,7 @@ export default function Home() {
           <div className="mask">
             <animated.button style={buttonAnimation} onClick={scrollToOffer} className="group bg-[var(--button)] px-6 md:px-8 py-2 md:py-6 rounded-xl font-medium text-xl md:text-3xl m-10 flex justify-center items-center gap-2">
               Learn More
-              <BsArrowRightShort size={40} className="transition-transform duration-300 group-hover:rotate-45"/>
+              <BsArrowRightShort size={40} className="transition-transform duration-300 md:group-hover:rotate-45"/>
             </animated.button>
           </div>
         </div>

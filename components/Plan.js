@@ -110,7 +110,7 @@ export default function Plan(){
                             </div>
                             <button className="bg-[var(--button)] px-4 py-2 rounded-xl font-medium mt-7 group flex justify-center items-center" onClick={handlePremium}>
                                 <h1>Get Started</h1>
-                                <BsArrowRightShort size={30} className="transition-transform duration-300 -rotate-45 group-hover:rotate-0"/>
+                                <BsArrowRightShort size={30} className="transition-transform duration-300 -rotate-45 md:group-hover:rotate-0"/>
                             </button>
                         </div>
                     </animated.div>
@@ -135,7 +135,7 @@ export default function Plan(){
                             </div>
                             <button className="bg-[#565E45] text-[#DCE0CD]  px-4 py-2 rounded-xl font-medium mt-7 group flex justify-center items-center" onClick={handleSupport}>
                                 Get Started
-                                <BsArrowRightShort size={30} className="transition-transform duration-300 -rotate-45 group-hover:rotate-0"/>
+                                <BsArrowRightShort size={30} className="transition-transform duration-300 -rotate-45 md:group-hover:rotate-0"/>
                             </button>
                         </div>
                     </animated.div>
