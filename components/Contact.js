@@ -17,7 +17,7 @@ export default function Contact() {
 
   return (
     <>
-      <animated.div ref={ref} style={ContactAnimation} className="m-10 md:m-32 flex flex-col justify-center items-center">
+      <animated.div ref={ref} style={ContactAnimation} className="p-10 md:p-32 flex flex-col justify-center items-center">
         <h1 className="text-2xl md:text-5xl font-bold uppercase">Get In Contact</h1>
         <button className="bg-[var(--button)] px-6 py-3 rounded-xl font-medium m-2 md:mt-7 transition-all md:hover:scale-105" onClick={handleBookCall}>
           Book a call

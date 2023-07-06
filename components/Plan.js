@@ -57,8 +57,8 @@ export default function Plan(){
     return(
         <>
             <animated.div ref={ref} style={PlanAnimation} className="w-full md:w-[1000px] flex flex-col justify-center items-center">
-                <h1 className="text-2xl md:text-5xl font-bold uppercase">Choose Your Plan</h1>
-                <div className="m-12 flex flex-col md:flex-row gap-2">
+                <h1 className="text-2xl md:text-5xl font-bold uppercase m-5 md:m-10">Choose Your Plan</h1>
+                <div className="flex flex-col md:flex-row gap-2">
                     {/* <animated.div ref={ref1} style={Card1Animation}>
                         <div className="bg-[#181916] border border-[#D9DCD6] w-[350px] rounded-2xl p-10">
                             <div>
